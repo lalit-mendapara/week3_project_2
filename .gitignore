@@ -14,3 +14,5 @@ celerybeat-schedule
 celerybeat.pid
 
 *.log
+
+/Users/lalit/Documents/BackendAI_Internship/week3_project_2/jobboard/settings.py
