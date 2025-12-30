@@ -1,0 +1,16 @@
+venv
+.env/
+
+__pycache__/
+*.pyc
+
+*.rdb
+dump.rdb
+
+.DS_Store
+Thumbs.db
+
+celerybeat-schedule
+celerybeat.pid
+
+*.log
