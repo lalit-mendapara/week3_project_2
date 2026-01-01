@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from config import EMAIL_HOST_PASSWORD,EMAIL_HOST_USER,CELERY_BROKER_URL,CELERY_RESULT_BACKEND,SECRET_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-w_p$%)=n!tr1z+f#swmnckuqzs2*jq2l&#x6pzxdte&mfyii0y"
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,8 +129,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = CELERY_BROKER_URL
+CELERY_RESULT_BACKEND = CELERY_RESULT_BACKEND
 
 
 # EMAIL SETTINGS (BEGINNER MODE)
@@ -138,8 +139,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = 'lalitmendapara95@gmail.com'      # 🔴 your gmail
-EMAIL_HOST_PASSWORD = 'dteftqcplrubjqym'    # 🔴 16-char app password
+EMAIL_HOST_USER = EMAIL_HOST_USER     
+EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD  
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
