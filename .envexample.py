@@ -1,7 +1,0 @@
-EMAIL_HOST_USER = "" # Email id
-EMAIL_HOST_PASSWORD = "" #Email app password
-
-CELERY_BROKER_URL = "" # redis server url
-CELERY_RESULT_BACKEND = "" # redis server Url
-
-SECRET_KEY = "" # django secret key
